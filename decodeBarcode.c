@@ -110,7 +110,6 @@ int decodeSignal(char * signal){
 
 void reverseSignal(char * str){
     char * endStr = str + strlen(str)-1;
-
     while (str<endStr){
         char temp = *str;
         *str = *endStr;
@@ -121,7 +120,7 @@ void reverseSignal(char * str){
 }
 
 static int roundNo(float num){
-    return (int)num+0.52;
+    return (int)(num + 0.52); // round to 0.48
 }
 
 static int printResult(int numSymbols, int weight[]){
