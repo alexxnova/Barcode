@@ -1,5 +1,4 @@
 #include "decodeBarcode.h"
-#include "validation.h"
 
 int main(){
     
